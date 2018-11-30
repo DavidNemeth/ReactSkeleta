@@ -1,5 +1,3 @@
-The project contains a fake authorization system, so you can change it to Identity or another.
-More info: https://github.com/NickMaev/react-core-boilerplate
 
 # Installation
 	0. Install of the latest stable Node.js: https://nodejs.org/en/

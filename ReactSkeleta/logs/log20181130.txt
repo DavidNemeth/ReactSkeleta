@@ -1,0 +1,370 @@
+2018-11-30 11:26:41.968 +01:00 [INF] User profile is available. Using 'C:\Users\dnemeth\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-30 11:27:10.917 +01:00 [FTL] Application startup exception
+System.AggregateException: One or more errors occurred. (Cannot find module './wwwroot/dist/vendor-manifest.json'
+Error: Cannot find module './wwwroot/dist/vendor-manifest.json'
+    at Function.Module._resolveFilename (module.js:542:15)
+    at Function.Module._load (module.js:472:25)
+    at Module.require (module.js:585:17)
+    at require (internal/module.js:11:18)
+    at module.exports (C:\Users\dnemeth\Documents\Visual Studio 2017\Projects\ReactSkeleta\ReactSkeleta\webpack.config.js:85:27)
+    at createWebpackDevServer (C:\Users\dnemeth\Documents\Visual Studio 2017\Projects\ReactSkeleta\ReactSkeleta\node_modules\aspnet-webpack\WebpackDevMiddleware.js:214:31)
+    at createWebpackDevServer (C:\Users\dnemeth\AppData\Local\Temp\huqunjlw.pio:74:50)
+    at C:\Users\dnemeth\AppData\Local\Temp\erfycaqd.mzj:114:19
+    at IncomingMessage.<anonymous> (C:\Users\dnemeth\AppData\Local\Temp\erfycaqd.mzj:133:38)
+    at emitNone (events.js:115:13)) ---> Microsoft.AspNetCore.NodeServices.HostingModels.NodeInvocationException: Cannot find module './wwwroot/dist/vendor-manifest.json'
+Error: Cannot find module './wwwroot/dist/vendor-manifest.json'
+    at Function.Module._resolveFilename (module.js:542:15)
+    at Function.Module._load (module.js:472:25)
+    at Module.require (module.js:585:17)
+    at require (internal/module.js:11:18)
+    at module.exports (C:\Users\dnemeth\Documents\Visual Studio 2017\Projects\ReactSkeleta\ReactSkeleta\webpack.config.js:85:27)
+    at createWebpackDevServer (C:\Users\dnemeth\Documents\Visual Studio 2017\Projects\ReactSkeleta\ReactSkeleta\node_modules\aspnet-webpack\WebpackDevMiddleware.js:214:31)
+    at createWebpackDevServer (C:\Users\dnemeth\AppData\Local\Temp\huqunjlw.pio:74:50)
+    at C:\Users\dnemeth\AppData\Local\Temp\erfycaqd.mzj:114:19
+    at IncomingMessage.<anonymous> (C:\Users\dnemeth\AppData\Local\Temp\erfycaqd.mzj:133:38)
+    at emitNone (events.js:115:13)
+   at Microsoft.AspNetCore.NodeServices.HostingModels.HttpNodeInstance.InvokeExportAsync[T](NodeInvocationInfo invocationInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.NodeServices.HostingModels.OutOfProcessNodeInstance.InvokeExportAsync[T](CancellationToken cancellationToken, String moduleName, String exportNameOrNull, Object[] args)
+   at Microsoft.AspNetCore.NodeServices.NodeServicesImpl.InvokeExportWithPossibleRetryAsync[T](String moduleName, String exportedFunctionName, Object[] args, Boolean allowRetry, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.NodeServices.NodeServicesImpl.InvokeExportWithPossibleRetryAsync[T](String moduleName, String exportedFunctionName, Object[] args, Boolean allowRetry, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Microsoft.AspNetCore.Builder.WebpackDevMiddleware.UseWebpackDevMiddleware(IApplicationBuilder appBuilder, WebpackDevMiddlewareOptions options)
+   at ReactSkeleta.Startup.Configure(IApplicationBuilder app, IHostingEnvironment env) in C:\Users\dnemeth\Documents\Visual Studio 2017\Projects\ReactSkeleta\ReactSkeleta\Startup.cs:line 69
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISSetupFilter.<>c__DisplayClass4_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+---> (Inner Exception #0) Microsoft.AspNetCore.NodeServices.HostingModels.NodeInvocationException: Cannot find module './wwwroot/dist/vendor-manifest.json'
+Error: Cannot find module './wwwroot/dist/vendor-manifest.json'
+    at Function.Module._resolveFilename (module.js:542:15)
+    at Function.Module._load (module.js:472:25)
+    at Module.require (module.js:585:17)
+    at require (internal/module.js:11:18)
+    at module.exports (C:\Users\dnemeth\Documents\Visual Studio 2017\Projects\ReactSkeleta\ReactSkeleta\webpack.config.js:85:27)
+    at createWebpackDevServer (C:\Users\dnemeth\Documents\Visual Studio 2017\Projects\ReactSkeleta\ReactSkeleta\node_modules\aspnet-webpack\WebpackDevMiddleware.js:214:31)
+    at createWebpackDevServer (C:\Users\dnemeth\AppData\Local\Temp\huqunjlw.pio:74:50)
+    at C:\Users\dnemeth\AppData\Local\Temp\erfycaqd.mzj:114:19
+    at IncomingMessage.<anonymous> (C:\Users\dnemeth\AppData\Local\Temp\erfycaqd.mzj:133:38)
+    at emitNone (events.js:115:13)
+   at Microsoft.AspNetCore.NodeServices.HostingModels.HttpNodeInstance.InvokeExportAsync[T](NodeInvocationInfo invocationInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.NodeServices.HostingModels.OutOfProcessNodeInstance.InvokeExportAsync[T](CancellationToken cancellationToken, String moduleName, String exportNameOrNull, Object[] args)
+   at Microsoft.AspNetCore.NodeServices.NodeServicesImpl.InvokeExportWithPossibleRetryAsync[T](String moduleName, String exportedFunctionName, Object[] args, Boolean allowRetry, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.NodeServices.NodeServicesImpl.InvokeExportWithPossibleRetryAsync[T](String moduleName, String exportedFunctionName, Object[] args, Boolean allowRetry, CancellationToken cancellationToken)<---
+
+2018-11-30 11:27:11.377 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:64098/  
+2018-11-30 11:27:11.377 +01:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:64098/  0
+2018-11-30 11:27:11.427 +01:00 [INF] Request finished in 50.5159ms 500 
+2018-11-30 11:27:11.427 +01:00 [ERR] Connection id "0HLIMLPHN5DO1", Request id "0HLIMLPHN5DO1:00000001": An unhandled exception was thrown by the application.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: values
+   at System.String.Join(String separator, IEnumerable`1 values)
+   at Microsoft.Extensions.RazorViews.BaseView.EndWriteAttribute()
+   at Microsoft.AspNetCore.Hosting.Views.ErrorPage.ExecuteAsync()
+   at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2018-11-30 11:27:11.432 +01:00 [INF] Request finished in 59.3667ms 500 text/html; charset=utf-8
+2018-11-30 11:27:17.310 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:64098/  
+2018-11-30 11:27:17.382 +01:00 [INF] Request finished in 26.2584ms 500 text/html; charset=utf-8
+2018-11-30 11:27:17.545 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:64098/favicon.ico  
+2018-11-30 11:27:17.565 +01:00 [INF] Request finished in 21.5312ms 500 text/html; charset=utf-8
+2018-11-30 11:34:31.999 +01:00 [INF] User profile is available. Using 'C:\Users\dnemeth\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-30 11:35:11.563 +01:00 [FTL] Application startup exception
+System.AggregateException: One or more errors occurred. (Cannot find module './wwwroot/dist/vendor-manifest.json'
+Error: Cannot find module './wwwroot/dist/vendor-manifest.json'
+    at Function.Module._resolveFilename (module.js:542:15)
+    at Function.Module._load (module.js:472:25)
+    at Module.require (module.js:585:17)
+    at require (internal/module.js:11:18)
+    at module.exports (C:\Users\dnemeth\Documents\Visual Studio 2017\Projects\ReactSkeleta\ReactSkeleta\webpack.config.js:85:27)
+    at createWebpackDevServer (C:\Users\dnemeth\Documents\Visual Studio 2017\Projects\ReactSkeleta\ReactSkeleta\node_modules\aspnet-webpack\WebpackDevMiddleware.js:214:31)
+    at createWebpackDevServer (C:\Users\dnemeth\AppData\Local\Temp\sg5xpzqt.32j:74:50)
+    at C:\Users\dnemeth\AppData\Local\Temp\lx5ajkxz.tg1:114:19
+    at IncomingMessage.<anonymous> (C:\Users\dnemeth\AppData\Local\Temp\lx5ajkxz.tg1:133:38)
+    at emitNone (events.js:115:13)) ---> Microsoft.AspNetCore.NodeServices.HostingModels.NodeInvocationException: Cannot find module './wwwroot/dist/vendor-manifest.json'
+Error: Cannot find module './wwwroot/dist/vendor-manifest.json'
+    at Function.Module._resolveFilename (module.js:542:15)
+    at Function.Module._load (module.js:472:25)
+    at Module.require (module.js:585:17)
+    at require (internal/module.js:11:18)
+    at module.exports (C:\Users\dnemeth\Documents\Visual Studio 2017\Projects\ReactSkeleta\ReactSkeleta\webpack.config.js:85:27)
+    at createWebpackDevServer (C:\Users\dnemeth\Documents\Visual Studio 2017\Projects\ReactSkeleta\ReactSkeleta\node_modules\aspnet-webpack\WebpackDevMiddleware.js:214:31)
+    at createWebpackDevServer (C:\Users\dnemeth\AppData\Local\Temp\sg5xpzqt.32j:74:50)
+    at C:\Users\dnemeth\AppData\Local\Temp\lx5ajkxz.tg1:114:19
+    at IncomingMessage.<anonymous> (C:\Users\dnemeth\AppData\Local\Temp\lx5ajkxz.tg1:133:38)
+    at emitNone (events.js:115:13)
+   at Microsoft.AspNetCore.NodeServices.HostingModels.HttpNodeInstance.InvokeExportAsync[T](NodeInvocationInfo invocationInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.NodeServices.HostingModels.OutOfProcessNodeInstance.InvokeExportAsync[T](CancellationToken cancellationToken, String moduleName, String exportNameOrNull, Object[] args)
+   at Microsoft.AspNetCore.NodeServices.NodeServicesImpl.InvokeExportWithPossibleRetryAsync[T](String moduleName, String exportedFunctionName, Object[] args, Boolean allowRetry, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.NodeServices.NodeServicesImpl.InvokeExportWithPossibleRetryAsync[T](String moduleName, String exportedFunctionName, Object[] args, Boolean allowRetry, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Microsoft.AspNetCore.Builder.WebpackDevMiddleware.UseWebpackDevMiddleware(IApplicationBuilder appBuilder, WebpackDevMiddlewareOptions options)
+   at ReactSkeleta.Startup.Configure(IApplicationBuilder app, IHostingEnvironment env) in C:\Users\dnemeth\Documents\Visual Studio 2017\Projects\ReactSkeleta\ReactSkeleta\Startup.cs:line 69
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISSetupFilter.<>c__DisplayClass4_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+---> (Inner Exception #0) Microsoft.AspNetCore.NodeServices.HostingModels.NodeInvocationException: Cannot find module './wwwroot/dist/vendor-manifest.json'
+Error: Cannot find module './wwwroot/dist/vendor-manifest.json'
+    at Function.Module._resolveFilename (module.js:542:15)
+    at Function.Module._load (module.js:472:25)
+    at Module.require (module.js:585:17)
+    at require (internal/module.js:11:18)
+    at module.exports (C:\Users\dnemeth\Documents\Visual Studio 2017\Projects\ReactSkeleta\ReactSkeleta\webpack.config.js:85:27)
+    at createWebpackDevServer (C:\Users\dnemeth\Documents\Visual Studio 2017\Projects\ReactSkeleta\ReactSkeleta\node_modules\aspnet-webpack\WebpackDevMiddleware.js:214:31)
+    at createWebpackDevServer (C:\Users\dnemeth\AppData\Local\Temp\sg5xpzqt.32j:74:50)
+    at C:\Users\dnemeth\AppData\Local\Temp\lx5ajkxz.tg1:114:19
+    at IncomingMessage.<anonymous> (C:\Users\dnemeth\AppData\Local\Temp\lx5ajkxz.tg1:133:38)
+    at emitNone (events.js:115:13)
+   at Microsoft.AspNetCore.NodeServices.HostingModels.HttpNodeInstance.InvokeExportAsync[T](NodeInvocationInfo invocationInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.NodeServices.HostingModels.OutOfProcessNodeInstance.InvokeExportAsync[T](CancellationToken cancellationToken, String moduleName, String exportNameOrNull, Object[] args)
+   at Microsoft.AspNetCore.NodeServices.NodeServicesImpl.InvokeExportWithPossibleRetryAsync[T](String moduleName, String exportedFunctionName, Object[] args, Boolean allowRetry, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.NodeServices.NodeServicesImpl.InvokeExportWithPossibleRetryAsync[T](String moduleName, String exportedFunctionName, Object[] args, Boolean allowRetry, CancellationToken cancellationToken)<---
+
+2018-11-30 11:35:11.870 +01:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:64098/  0
+2018-11-30 11:35:11.870 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:64098/  
+2018-11-30 11:35:11.892 +01:00 [ERR] Connection id "0HLIMLU0TRJTQ", Request id "0HLIMLU0TRJTQ:00000001": An unhandled exception was thrown by the application.
+System.OverflowException: Arithmetic operation resulted in an overflow.
+   at System.IO.StreamWriter.Write(String value)
+   at Microsoft.AspNetCore.Hosting.Views.ErrorPage.ExecuteAsync()
+   at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2018-11-30 11:35:11.893 +01:00 [ERR] Connection id "0HLIMLU0TRJTR", Request id "0HLIMLU0TRJTR:00000001": An unhandled exception was thrown by the application.
+System.ArgumentOutOfRangeException: Index and count must refer to a location within the buffer.
+Parameter name: chars
+   at System.Text.EncoderNLS.GetBytes(Char[] chars, Int32 charIndex, Int32 charCount, Byte[] bytes, Int32 byteIndex, Boolean flush)
+   at System.IO.StreamWriter.Flush(Boolean flushStream, Boolean flushEncoder)
+   at System.IO.StreamWriter.Write(String value)
+   at Microsoft.AspNetCore.Hosting.Views.ErrorPage.ExecuteAsync()
+   at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2018-11-30 11:35:11.915 +01:00 [INF] Request finished in 47.1312ms 500 
+2018-11-30 11:35:11.915 +01:00 [INF] Request finished in 47.1312ms 500 
+2018-11-30 11:35:15.091 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:64098/  
+2018-11-30 11:35:15.137 +01:00 [INF] Request finished in 41.804ms 500 text/html; charset=utf-8
+2018-11-30 11:35:15.371 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:64098/favicon.ico  
+2018-11-30 11:35:15.395 +01:00 [INF] Request finished in 20.9051ms 500 text/html; charset=utf-8
+2018-11-30 11:50:17.128 +01:00 [INF] User profile is available. Using 'C:\Users\dnemeth\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-30 11:50:25.558 +01:00 [INF] Starting type checking service...
+2018-11-30 11:50:25.563 +01:00 [INF] Using 1 worker with 2048MB memory limit
+2018-11-30 11:50:25.651 +01:00 [INF] Starting type checking service...
+2018-11-30 11:50:25.657 +01:00 [INF] Using 1 worker with 2048MB memory limit
+2018-11-30 11:50:26.599 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:64098/  
+2018-11-30 11:50:26.599 +01:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:64098/  0
+2018-11-30 11:50:26.874 +01:00 [INF] Request finished in 261.5785ms 200 
+2018-11-30 11:50:27.340 +01:00 [INF] Route matched with {action = "Index", controller = "Main"}. Executing action ReactSkeleta.Controllers.MainController.Index (ReactSkeleta)
+2018-11-30 11:50:27.377 +01:00 [INF] Executing action method ReactSkeleta.Controllers.MainController.Index (ReactSkeleta) - Validation state: "Valid"
+2018-11-30 11:50:27.410 +01:00 [INF] Executed action method ReactSkeleta.Controllers.MainController.Index (ReactSkeleta), returned result Microsoft.AspNetCore.Mvc.ViewResult in 6.7246000000000006ms.
+2018-11-30 11:50:27.537 +01:00 [INF] Executing ViewResult, running view Index.
+2018-11-30 11:50:30.104 +01:00 [INF] Executed ViewResult - view Index executed in 2582.5672ms.
+2018-11-30 11:50:30.216 +01:00 [INF] Executed action ReactSkeleta.Controllers.MainController.Index (ReactSkeleta) in 2779.1912ms
+2018-11-30 11:50:30.251 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:64098/dist/vendor.js?v=1c48iO6ow70Gy-vTTxMzheMQe-Xan-HeG-IHeE_dmRM  
+2018-11-30 11:50:30.294 +01:00 [INF] Request finished in 3693.8971ms 200 text/html; charset=utf-8
+2018-11-30 11:50:30.319 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:64098/dist/vendor.css?v=jU_Mas_X34ZO5mmlWyzKdR6gPhXku_yPRQktIvtEQnk  
+2018-11-30 11:50:30.386 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:64098/dist/main-client.js?v=ewJH-7t0Bbhy81LbRCDj5Lp8k--WRp5n9BeKj_476j4  
+2018-11-30 11:50:31.241 +01:00 [INF] [34mi[39m [90m´Żówdm´Żú[39m: wait until bundle finished: /dist/vendor.css?v=jU_Mas_X34ZO5mmlWyzKdR6gPhXku_yPRQktIvtEQnk
+2018-11-30 11:50:31.477 +01:00 [INF] [34mi[39m [90m´Żówdm´Żú[39m: wait until bundle finished: /dist/vendor.js?v=1c48iO6ow70Gy-vTTxMzheMQe-Xan-HeG-IHeE_dmRM
+2018-11-30 11:50:31.779 +01:00 [INF] [34mi[39m [90m´Żówdm´Żú[39m: wait until bundle finished: /dist/main-client.js?v=ewJH-7t0Bbhy81LbRCDj5Lp8k--WRp5n9BeKj_476j4
+2018-11-30 11:50:47.944 +01:00 [INF] No type errors found
+2018-11-30 11:50:47.951 +01:00 [INF] Version: typescript 3.0.1
+2018-11-30 11:50:47.957 +01:00 [INF] Time: 16108ms
+2018-11-30 11:50:48.048 +01:00 [INF] webpack built d2bbb7f1bcbe5212eef2 in 22523ms
+2018-11-30 11:50:48.048 +01:00 [INF] Node will restart because file changed: C:\Users\dnemeth\Documents\Visual Studio 2017\Projects\ReactSkeleta\ReactSkeleta\wwwroot\dist\main-client.js
+2018-11-30 11:50:49.561 +01:00 [INF] [34mi[39m [90m´Żówdm´Żú[39m: Failed to compile.
+2018-11-30 11:50:49.592 +01:00 [ERR] [31m├Ś[39m [90m´Żówdm´Żú[39m: Hash: d2bbb7f1bcbe5212eef2
+Version: webpack 4.23.1
+Time: 22523ms
+Built at: 2018-11-30 11:50:47
+                               Asset      Size       Chunks             Chunk Names
+41b61ebfee29e470850ed2d2d889e33f.png    55 KiB               [emitted]  
+                      main-client.js   499 KiB  main-client  [emitted]  main-client
+                  main-client.js.map  29.9 KiB  main-client  [emitted]  main-client
+Entrypoint main-client = main-client.js main-client.js.map
+
+ERROR in ./ClientApp/styles/main.scss (./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./ClientApp/styles/main.scss)
+Module build failed (from ./node_modules/sass-loader/lib/loader.js):
+Error: Missing binding C:\Users\dnemeth\Documents\Visual Studio 2017\Projects\ReactSkeleta\ReactSkeleta\node_modules\node-sass\vendor\win32-x64-59\binding.node
+Node Sass could not find a binding for your current environment: Windows 64-bit with Node.js 9.x
+
+Found bindings for the following environments:
+  - Windows 64-bit with Node.js 10.x
+
+This usually happens because your environment has changed since running `npm install`.
+Run `npm rebuild node-sass` to download the binding for your current environment.
+    at module.exports (C:\Users\dnemeth\Documents\Visual Studio 2017\Projects\ReactSkeleta\ReactSkeleta\node_modules\node-sass\lib\binding.js:15:13)
+    at Object.<anonymous> (C:\Users\dnemeth\Documents\Visual Studio 2017\Projects\ReactSkeleta\ReactSkeleta\node_modules\node-sass\lib\index.js:14:35)
+    at Module._compile (module.js:641:30)
+    at Object.Module._extensions..js (module.js:652:10)
+    at Module.load (module.js:560:32)
+    at tryModuleLoad (module.js:503:12)
+    at Function.Module._load (module.js:495:3)
+    at Module.require (module.js:585:17)
+    at require (internal/module.js:11:18)
+    at Object.sassLoader (C:\Users\dnemeth\Documents\Visual Studio 2017\Projects\ReactSkeleta\ReactSkeleta\node_modules\sass-loader\lib\loader.js:46:72)
+ @ ./ClientApp/styles/main.scss 4:14-122 18:2-22:4 19:20-128
+ @ ./ClientApp/boot-client.tsx
+ @ multi event-source-polyfill webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/boot-client.tsx
+
+ERROR in ./ClientApp/styles/authorizedLayout.scss (./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./ClientApp/styles/authorizedLayout.scss)
+Module build failed (from ./node_modules/sass-loader/lib/loader.js):
+Error: Missing binding C:\Users\dnemeth\Documents\Visual Studio 2017\Projects\ReactSkeleta\ReactSkeleta\node_modules\node-sass\vendor\win32-x64-59\binding.node
+Node Sass could not find a binding for your current environment: Windows 64-bit with Node.js 9.x
+
+Found bindings for the following environments:
+  - Windows 64-bit with Node.js 10.x
+
+This usually happens because your environment has changed since running `npm install`.
+Run `npm rebuild node-sass` to download the binding for your current environment.
+    at module.exports (C:\Users\dnemeth\Documents\Visual Studio 2017\Projects\ReactSkeleta\ReactSkeleta\node_modules\node-sass\lib\binding.js:15:13)
+    at Object.<anonymous> (C:\Users\dnemeth\Documents\Visual Studio 2017\Projects\ReactSkeleta\ReactSkeleta\node_modules\node-sass\lib\index.js:14:35)
+    at Module._compile (module.js:641:30)
+    at Object.Module._extensions..js (module.js:652:10)
+    at Module.load (module.js:560:32)
+    at tryModuleLoad (module.js:503:12)
+    at Function.Module._load (module.js:495:3)
+    at Module.require (module.js:585:17)
+    at require (internal/module.js:11:18)
+    at Object.sassLoader (C:\Users\dnemeth\Documents\Visual Studio 2017\Projects\ReactSkeleta\ReactSkeleta\node_modules\sass-loader\lib\loader.js:46:72)
+ @ ./ClientApp/styles/authorizedLayout.scss 4:14-134 18:2-22:4 19:20-140
+ @ ./ClientApp/layouts/authorizedLayout.tsx
+ @ ./ClientApp/routes.tsx
+ @ ./ClientApp/boot-client.tsx
+ @ multi event-source-polyfill webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/boot-client.tsx
+
+ERROR in ./ClientApp/styles/guestLayout.scss (./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./ClientApp/styles/guestLayout.scss)
+Module build failed (from ./node_modules/sass-loader/lib/loader.js):
+Error: Missing binding C:\Users\dnemeth\Documents\Visual Studio 2017\Projects\ReactSkeleta\ReactSkeleta\node_modules\node-sass\vendor\win32-x64-59\binding.node
+Node Sass could not find a binding for your current environment: Windows 64-bit with Node.js 9.x
+
+Found bindings for the following environments:
+  - Windows 64-bit with Node.js 10.x
+
+This usually happens because your environment has changed since running `npm install`.
+Run `npm rebuild node-sass` to download the binding for your current environment.
+    at module.exports (C:\Users\dnemeth\Documents\Visual Studio 2017\Projects\ReactSkeleta\ReactSkeleta\node_modules\node-sass\lib\binding.js:15:13)
+    at Object.<anonymous> (C:\Users\dnemeth\Documents\Visual Studio 2017\Projects\ReactSkeleta\ReactSkeleta\node_modules\node-sass\lib\index.js:14:35)
+    at Module._compile (module.js:641:30)
+    at Object.Module._extensions..js (module.js:652:10)
+    at Module.load (module.js:560:32)
+    at tryModuleLoad (module.js:503:12)
+    at Function.Module._load (module.js:495:3)
+    at Module.require (module.js:585:17)
+    at require (internal/module.js:11:18)
+    at Object.sassLoader (C:\Users\dnemeth\Documents\Visual Studio 2017\Projects\ReactSkeleta\ReactSkeleta\node_modules\sass-loader\lib\loader.js:46:72)
+ @ ./ClientApp/styles/guestLayout.scss 4:14-129 18:2-22:4 19:20-135
+ @ ./ClientApp/layouts/guestLayout.tsx
+ @ ./ClientApp/routes.tsx
+ @ ./ClientApp/boot-client.tsx
+ @ multi event-source-polyfill webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/boot-client.tsx
+
+ERROR in ./ClientApp/styles/loader.scss (./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./ClientApp/styles/loader.scss)
+Module build failed (from ./node_modules/sass-loader/lib/loader.js):
+Error: Missing binding C:\Users\dnemeth\Documents\Visual Studio 2017\Projects\ReactSkeleta\ReactSkeleta\node_modules\node-sass\vendor\win32-x64-59\binding.node
+Node Sass could not find a binding for your current environment: Windows 64-bit with Node.js 9.x
+
+Found bindings for the following environments:
+  - Windows 64-bit with Node.js 10.x
+
+This usually happens because your environment has changed since running `npm install`.
+Run `npm rebuild node-sass` to download the binding for your current environment.
+    at module.exports (C:\Users\dnemeth\Documents\Visual Studio 2017\Projects\ReactSkeleta\ReactSkeleta\node_modules\node-sass\lib\binding.js:15:13)
+    at Object.<anonymous> (C:\Users\dnemeth\Documents\Visual Studio 2017\Projects\ReactSkeleta\ReactSkeleta\node_modules\node-sass\lib\index.js:14:35)
+    at Module._compile (module.js:641:30)
+    at Object.Module._extensions..js (module.js:652:10)
+    at Module.load (module.js:560:32)
+    at tryModuleLoad (module.js:503:12)
+    at Function.Module._load (module.js:495:3)
+    at Module.require (module.js:585:17)
+    at require (internal/module.js:11:18)
+    at Object.sassLoader (C:\Users\dnemeth\Documents\Visual Studio 2017\Projects\ReactSkeleta\ReactSkeleta\node_modules\sass-loader\lib\loader.js:46:72)
+ @ ./ClientApp/styles/loader.scss 4:14-124 18:2-22:4 19:20-130
+ @ ./ClientApp/components/shared/Loader.tsx
+ @ ./ClientApp/pages/loginPage.tsx
+ @ ./ClientApp/routes.tsx
+ @ ./ClientApp/boot-client.tsx
+ @ multi event-source-polyfill webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/boot-client.tsx
+2018-11-30 11:50:50.185 +01:00 [INF] Request finished in 19743.5094ms 200 application/javascript; charset=UTF-8
+2018-11-30 11:50:50.355 +01:00 [INF] Sending file. Request path: '/dist/vendor.css'. Physical path: 'C:\Users\dnemeth\Documents\Visual Studio 2017\Projects\ReactSkeleta\ReactSkeleta\wwwroot\dist\vendor.css'
+2018-11-30 11:50:50.361 +01:00 [INF] Request finished in 20044.0324ms 200 text/css
+2018-11-30 11:50:50.529 +01:00 [INF] No type errors found
+2018-11-30 11:50:50.617 +01:00 [INF] Version: typescript 3.0.1
+2018-11-30 11:50:50.629 +01:00 [INF] Time: 16465ms
+2018-11-30 11:50:50.986 +01:00 [INF] Sending file. Request path: '/dist/vendor.js'. Physical path: 'C:\Users\dnemeth\Documents\Visual Studio 2017\Projects\ReactSkeleta\ReactSkeleta\wwwroot\dist\vendor.js'
+2018-11-30 11:50:51.010 +01:00 [INF] Request finished in 20766.7232ms 200 application/javascript
+2018-11-30 11:50:52.044 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:64098/dist/__webpack_hmr  
+2018-11-30 11:50:52.054 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:64098/favicon.ico  
+2018-11-30 11:50:52.068 +01:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\dnemeth\Documents\Visual Studio 2017\Projects\ReactSkeleta\ReactSkeleta\wwwroot\favicon.ico'
+2018-11-30 11:50:52.072 +01:00 [INF] Request finished in 18.1075ms 200 image/x-icon
+2018-11-30 11:59:25.628 +01:00 [INF] User profile is available. Using 'C:\Users\dnemeth\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-11-30 11:59:33.428 +01:00 [INF] Starting type checking service...
+2018-11-30 11:59:33.435 +01:00 [INF] Using 1 worker with 2048MB memory limit
+2018-11-30 11:59:33.549 +01:00 [INF] Starting type checking service...
+2018-11-30 11:59:33.568 +01:00 [INF] Using 1 worker with 2048MB memory limit
+2018-11-30 11:59:34.897 +01:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:64098/  0
+2018-11-30 11:59:34.935 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:64098/  
+2018-11-30 11:59:35.037 +01:00 [INF] Request finished in 302.1753ms 200 
+2018-11-30 11:59:35.944 +01:00 [INF] Route matched with {action = "Index", controller = "Main"}. Executing action ReactSkeleta.Controllers.MainController.Index (ReactSkeleta)
+2018-11-30 11:59:35.994 +01:00 [INF] Executing action method ReactSkeleta.Controllers.MainController.Index (ReactSkeleta) - Validation state: "Valid"
+2018-11-30 11:59:36.023 +01:00 [INF] Executed action method ReactSkeleta.Controllers.MainController.Index (ReactSkeleta), returned result Microsoft.AspNetCore.Mvc.ViewResult in 5.9786ms.
+2018-11-30 11:59:36.223 +01:00 [INF] Executing ViewResult, running view Index.
+2018-11-30 11:59:39.788 +01:00 [INF] Executed ViewResult - view Index executed in 3578.7152ms.
+2018-11-30 11:59:39.924 +01:00 [INF] Executed action ReactSkeleta.Controllers.MainController.Index (ReactSkeleta) in 3857.8565000000003ms
+2018-11-30 11:59:39.967 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:64098/dist/vendor.js?v=1c48iO6ow70Gy-vTTxMzheMQe-Xan-HeG-IHeE_dmRM  
+2018-11-30 11:59:39.978 +01:00 [INF] Request finished in 5250.3804ms 200 text/html; charset=utf-8
+2018-11-30 11:59:40.008 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:64098/dist/main-client.js?v=qc9vWPuSNU7RLBdtepUaONR7O4pSQ2l6AQm-eAbVcZ0  
+2018-11-30 11:59:40.027 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:64098/dist/vendor.css?v=jU_Mas_X34ZO5mmlWyzKdR6gPhXku_yPRQktIvtEQnk  
+2018-11-30 11:59:41.707 +01:00 [INF] [34mi[39m [90m´Żówdm´Żú[39m: wait until bundle finished: /dist/vendor.js?v=1c48iO6ow70Gy-vTTxMzheMQe-Xan-HeG-IHeE_dmRM
+2018-11-30 11:59:42.027 +01:00 [INF] [34mi[39m [90m´Żówdm´Żú[39m: wait until bundle finished: /dist/vendor.css?v=jU_Mas_X34ZO5mmlWyzKdR6gPhXku_yPRQktIvtEQnk
+2018-11-30 11:59:42.078 +01:00 [INF] [34mi[39m [90m´Żówdm´Żú[39m: wait until bundle finished: /dist/main-client.js?v=qc9vWPuSNU7RLBdtepUaONR7O4pSQ2l6AQm-eAbVcZ0
+2018-11-30 11:59:57.544 +01:00 [INF] No type errors found
+2018-11-30 11:59:57.548 +01:00 [INF] Version: typescript 3.0.1
+2018-11-30 11:59:57.554 +01:00 [INF] Time: 19020ms
+2018-11-30 11:59:57.579 +01:00 [INF] webpack built 11c3f4752d387c3d00d4 in 24260ms
+2018-11-30 11:59:57.587 +01:00 [INF] Node will restart because file changed: C:\Users\dnemeth\Documents\Visual Studio 2017\Projects\ReactSkeleta\ReactSkeleta\wwwroot\dist\main-client.js
+2018-11-30 11:59:58.853 +01:00 [INF] [34mi[39m [90m´Żówdm´Żú[39m: Hash: 11c3f4752d387c3d00d4
+Version: webpack 4.23.1
+Time: 24260ms
+Built at: 2018-11-30 11:59:57
+                               Asset      Size       Chunks             Chunk Names
+41b61ebfee29e470850ed2d2d889e33f.png    55 KiB               [emitted]  
+                      main-client.js   502 KiB  main-client  [emitted]  main-client
+                  main-client.js.map  29.9 KiB  main-client  [emitted]  main-client
+Entrypoint main-client = main-client.js main-client.js.map
+2018-11-30 11:59:58.858 +01:00 [INF] [34mi[39m [90m´Żówdm´Żú[39m: Compiled successfully.
+2018-11-30 11:59:59.182 +01:00 [INF] Request finished in 19032.1454ms 200 application/javascript; charset=UTF-8
+2018-11-30 11:59:59.187 +01:00 [INF] No type errors found
+2018-11-30 11:59:59.196 +01:00 [INF] The file /dist/vendor.js was not modified
+2018-11-30 11:59:59.197 +01:00 [INF] Version: typescript 3.0.1
+2018-11-30 11:59:59.201 +01:00 [INF] Time: 18780ms
+2018-11-30 11:59:59.218 +01:00 [INF] Request finished in 19275.8048ms 304 application/javascript
+2018-11-30 11:59:59.267 +01:00 [INF] Sending file. Request path: '/dist/vendor.css'. Physical path: 'C:\Users\dnemeth\Documents\Visual Studio 2017\Projects\ReactSkeleta\ReactSkeleta\wwwroot\dist\vendor.css'
+2018-11-30 11:59:59.343 +01:00 [INF] Request finished in 19249.1693ms 200 text/css
+2018-11-30 12:00:00.190 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:64098/dist/__webpack_hmr  
+2018-11-30 12:01:20.061 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:64098/api/Account/Login application/json;charset=UTF-8 36
+2018-11-30 12:01:20.093 +01:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing action ReactSkeleta.Controllers.AccountController.Login (ReactSkeleta)
+2018-11-30 12:01:20.180 +01:00 [INF] Executing action method ReactSkeleta.Controllers.AccountController.Login (ReactSkeleta) with arguments (["ReactSkeleta.Models.LoginModel"]) - Validation state: "Valid"
+2018-11-30 12:01:20.188 +01:00 [INF] Executed action method ReactSkeleta.Controllers.AccountController.Login (ReactSkeleta), returned result Microsoft.AspNetCore.Mvc.JsonResult in 2.7364ms.
+2018-11-30 12:01:20.193 +01:00 [INF] Executing JsonResult, writing value of type 'ReactSkeleta.Infrastructure.Result`1[[ReactSkeleta.Models.ServiceUser, ReactSkeleta, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2018-11-30 12:01:20.205 +01:00 [INF] Executed action ReactSkeleta.Controllers.AccountController.Login (ReactSkeleta) in 106.09540000000001ms
+2018-11-30 12:01:20.209 +01:00 [INF] Request finished in 161.8284ms 200 application/json; charset=utf-8
+2018-11-30 12:01:20.323 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:64098/dist/41b61ebfee29e470850ed2d2d889e33f.png  
+2018-11-30 12:01:20.383 +01:00 [INF] Request finished in 60.8013ms 200 image/png; charset=UTF-8
+2018-11-30 12:01:30.920 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:64098/api/Person  
+2018-11-30 12:01:30.927 +01:00 [INF] Route matched with {action = "GetAll", controller = "Person"}. Executing action ReactSkeleta.Controllers.PersonController.GetAll (ReactSkeleta)
+2018-11-30 12:01:30.935 +01:00 [INF] Executing action method ReactSkeleta.Controllers.PersonController.GetAll (ReactSkeleta) - Validation state: "Valid"
+2018-11-30 12:01:30.939 +01:00 [INF] Executed action method ReactSkeleta.Controllers.PersonController.GetAll (ReactSkeleta), returned result Microsoft.AspNetCore.Mvc.JsonResult in 0.8826ms.
+2018-11-30 12:01:30.942 +01:00 [INF] Executing JsonResult, writing value of type 'ReactSkeleta.Infrastructure.Result`1[[System.Collections.Generic.List`1[[ReactSkeleta.Models.PersonModel, ReactSkeleta, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-11-30 12:01:30.951 +01:00 [INF] Executed action ReactSkeleta.Controllers.PersonController.GetAll (ReactSkeleta) in 19.3502ms
+2018-11-30 12:01:30.955 +01:00 [INF] Request finished in 35.2364ms 200 application/json; charset=utf-8
+2018-11-30 12:01:45.455 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:64098/api/Account/Logout  0
+2018-11-30 12:01:45.461 +01:00 [INF] Route matched with {action = "Logout", controller = "Account"}. Executing action ReactSkeleta.Controllers.AccountController.Logout (ReactSkeleta)
+2018-11-30 12:01:45.465 +01:00 [INF] Executing action method ReactSkeleta.Controllers.AccountController.Logout (ReactSkeleta) - Validation state: "Valid"
+2018-11-30 12:01:45.470 +01:00 [INF] Executed action method ReactSkeleta.Controllers.AccountController.Logout (ReactSkeleta), returned result Microsoft.AspNetCore.Mvc.JsonResult in 1.9832ms.
+2018-11-30 12:01:45.474 +01:00 [INF] Executing JsonResult, writing value of type 'ReactSkeleta.Infrastructure.Result'.
+2018-11-30 12:01:45.484 +01:00 [INF] Executed action ReactSkeleta.Controllers.AccountController.Logout (ReactSkeleta) in 13.529900000000001ms
+2018-11-30 12:01:45.489 +01:00 [INF] Request finished in 33.4947ms 200 application/json; charset=utf-8
